@@ -163,6 +163,7 @@ else
             axis image
             colorbar
             title('Misfit')
+        saveas(gcf,'Intermediate_model_InSAR.png')
         case 'GPS'
             %             odds = [1:2:np];
             %             evens= [2:2:np];
@@ -210,7 +211,7 @@ else
             quiver([resampstruct.X(odds)],[resampstruct.Y(odds)],[resampstruct.data(odds)]-synth(odds),[resampstruct.data(evens)]-synth(evens), 1);
             axis image
             title('Misfit')
-            figure
+        saveas(gcf,'Intermediate_model_GPS.png')
             
         case 'Mixed'
             
@@ -254,5 +255,6 @@ else
             axis image
             colorbar
             title('Misfit')
+        saveas(gcf,'Intermediate_model_InSAR_GPS.png')
     end
 end
