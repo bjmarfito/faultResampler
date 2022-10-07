@@ -68,6 +68,15 @@ axis image
 set(gca,'ydir', 'reverse')
 colorbar
 title('Final Slip Distribution')
+saveas(gcf,'final_slip_distribution.png')
+
+%Create matrix to save outputs
+resultstruct = [];
+resultstruct.patch_new1 = patch_new1;
+resultstruct.patch_new = patch_new;
+resultstruct.slip = slip;
+
+
 
 figure
 subplot(3,1,1)
@@ -90,6 +99,13 @@ axis image
 shading flat
 colorbar
 title('Data Misfit')
+saveas(gcf,'final_model.png')
+resultstruct.boxx = boxx;
+resultstruct.boxy = boxy;
+resultstruct.data = transpose(data);
+resultstruct.synth = transpose(synth);
+save('resultstruct.mat','resultstruct');
+disp('Final outputs saved!')
 
 
-    
+
