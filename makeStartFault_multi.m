@@ -1,7 +1,7 @@
 global nfault
 
 nfault=length(faultstruct);
-fprintf('%s %d\n', 'No. of faults =', nfault)
+%fprintf('%s %d\n', 'No. of faults =', nfault)
 patchstruct=[];
 triId= [];
 numTri=[];
