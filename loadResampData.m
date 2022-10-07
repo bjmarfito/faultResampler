@@ -74,8 +74,8 @@ np      = sum(allnp);               %Total number of data points
 
 X       = [resampstruct.X]';        % Easting coordinates
 Y       = [resampstruct.Y]';        % Northing coordinates
-boxx    = [resampstruct.boxx];      % Resampled boxes for InSAR data
-boxy    = [resampstruct.boxy];
+boxx    = [resampstruct.trix];      % Resampled boxes for InSAR data
+boxy    = [resampstruct.triy];
 S       = [resampstruct.S];         % Look direction
 ch      = chol(covd);               % For scaling data
 Cdinv   = inv(ch');                 
