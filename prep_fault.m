@@ -1,4 +1,4 @@
-function [] = prepFault(strike, dip, rake, len, wid, top_depth, vertices)
+function [] = prep_fault(strike, dip, rake, len, wid, top_depth, vertices)
 
 %% Code to generate fault model based on uniform elastic dislocation model
 %
