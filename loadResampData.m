@@ -48,7 +48,7 @@ datafiles           = {'dataDemo.mat'};
 faultfiles          = {'faultDemo.mat'};   % Fault to be resampled
 rake_type           = 'fixed';                % free or fixed.  Rake must be defined below if rake_type=free
 smooth_method       = 'mm';          % laplacian or mm (minimum moment)
-reg_method          = 'lcurve';  % jRi or lcurve
+reg_method          = 'jRi';  % jRi or lcurve
 data_type           = 'InSAR';
 rake                = 178;
 flag                = 1;  % Plotting flag: 1= plots after each iteration, 0= plots only at end
