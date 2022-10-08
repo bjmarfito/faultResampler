@@ -1,10 +1,13 @@
 function [] = prepFault(strike, dip, rake, len, wid, top_depth, vertices)
 
-%% Code to generate fault model based on unfirom elastic dislocation model
-% All units must be in meters
-% Right-hand rule is the convention for strike, dip, and rake measurements
-% Vertices should be in UTM coordinates, If the fault is due north the first point is located south of the second point
-% Output filename is faultmodel.m
+%% Code to generate fault model based on uniform elastic dislocation model
+%
+% Important Notes:
+% 1. All units must be in degrees or meters 
+% 2. Right-hand rule is the convention for strike, dip, and rake measurements
+% 3. Vertices should be in UTM coordinates, If the fault is due north the first point is located south of the second point
+% 4. Output filename is faultmodel.m
+%
 %% Author: Bryan Marfito
 
 faultstruct = [];
