@@ -10,7 +10,6 @@ function [] = prepFault(strike, dip, rake, len, wid, top_depth, vertices)
 %
 %% Author: Bryan Marfito
 
-faultstruct = [];
 faultstruct.strike = strike;
 faultstruct.dip = dip;
 faultstruct.rake = rake;
