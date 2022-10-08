@@ -111,7 +111,7 @@ gsmooth             = [G; lambda*smooth zeros(nPatch, nramp)];
 Gg                  = inv(gsmooth'*gsmooth)*G';
 [mil,resnorm,ril]   = lsqlin(gsmooth, D, A, B, [],[],[],[],mil,options);
 synth               = green'*mil(1:nPatch);
-[m0,mw]             = calcMoment(patchstruct, mil(1:nPatch), 'tri')
+[m0,mw]             = calcMoment(patchstruct, mil(1:nPatch), 'tri');
 slip                = mil(1:nPatch);
 
 %%%% Plot Stuff

@@ -103,7 +103,7 @@ Gg              = inv(gsmooth'*gsmooth)*G';
 [mil,resnorm,ril]= lsqlin(gsmooth, D, A, B, [],[],[],[],[],options);
 synth           = green'*mil(1:2*nPatch);
 slip            =sqrt(mil(1:nPatch).^2+mil(nPatch+1:2*nPatch).^2);
-[m0, mw] = calcMoment(patchstruct, slip,'tri')
+[m0, mw] = calcMoment(patchstruct, slip,'tri');
 
 %%%% Plot Stuff
 if flag==0
