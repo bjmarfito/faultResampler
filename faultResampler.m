@@ -1,3 +1,5 @@
+close all
+clear
 global b x2 y2 covd2
 
 % FAULTRESAMPLER    Tool for generating optimally discretized model fault
@@ -106,6 +108,3 @@ resultstruct.data = transpose(data);
 resultstruct.synth = transpose(synth);
 save('resultstruct.mat','resultstruct');
 disp('Final outputs saved!')
-
-clear
-close all

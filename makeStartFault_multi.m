@@ -7,7 +7,7 @@ triId= [];
 numTri=[];
 
 for i=1:nfault
-    Faultstruct=faultstruct(i);
+   Faultstruct=faultstruct(i);
    L=Faultstruct.L;
    dip=Faultstruct.dip;
    W=Faultstruct.W;
