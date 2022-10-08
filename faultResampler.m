@@ -107,5 +107,5 @@ resultstruct.synth = transpose(synth);
 save('resultstruct.mat','resultstruct');
 disp('Final outputs saved!')
 
-
-
+clear
+close all
