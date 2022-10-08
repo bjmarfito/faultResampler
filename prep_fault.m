@@ -1,6 +1,6 @@
 function [] = prep_fault(strike, dip, rake, len, wid, top_depth, vertices)
 
-%% Code to generate fault model based on uniform elastic dislocation model
+%% Code to generate a fault model based on uniform elastic dislocation model
 %
 % Important Notes:
 % 1. All units must be in degrees or meters 
