@@ -1,5 +1,5 @@
 close all
-clear
+clear all
 global b x2 y2 covd2
 
 % FAULTRESAMPLER    Tool for generating optimally discretized model fault
