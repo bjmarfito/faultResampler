@@ -1,10 +1,10 @@
 % rotateFinal
 clear patch_new patch_new1
-    strike=faultstruct.strike;
-    dip=faultstruct.dip;
+strike = faultstruct.strike;
+dip = faultstruct.dip;
 
 
-rot1= [cosd(-strike) sind(-strike) 0; -sind(-strike), cosd(-strike) 0; 0 0 1];
+rot1 = [cosd(-strike) sind(-strike) 0; -sind(-strike), cosd(-strike) 0; 0 0 1];
 
 for i=1:length(patchstruct)
     
