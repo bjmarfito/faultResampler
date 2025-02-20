@@ -1,4 +1,4 @@
-function[] = plot_result_fs(fileName, index)
+function[] = plot_result_slip(fileName, index)
 
 infoValues = load(fileName);
 cmin = -20;
